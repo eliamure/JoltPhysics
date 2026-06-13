@@ -1,3 +1,14 @@
+<!-- ───────────────────────────────────────────────────────────────────────── -->
+> **Fork note — Motorcycle Dynamics.** This fork was assessed as a candidate for
+> engineering-grade motorcycle dynamics. Jolt's `MotorcycleController` models the
+> bike as a single rigid body kept upright by a PID lean controller — ideal for
+> games, a dead-end for real single-track dynamics (where stability must emerge
+> from the wheels' gyroscopic + trail coupling, reproduced by a general
+> articulated-body integrator such as MuJoCo). Full assessment:
+> [`MOTORCYCLE_DYNAMICS_FINDINGS.md`](MOTORCYCLE_DYNAMICS_FINDINGS.md). No engine
+> change was made. The upstream Jolt Physics documentation follows unchanged.
+<!-- ───────────────────────────────────────────────────────────────────────── -->
+
 [![CLA assistant](https://cla-assistant.io/readme/badge/jrouwe/JoltPhysics)](https://cla-assistant.io/jrouwe/JoltPhysics)
 [![Build Status](https://github.com/jrouwe/JoltPhysics/actions/workflows/build.yml/badge.svg)](https://github.com/jrouwe/JoltPhysics/actions/)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jrouwe_JoltPhysics&metric=alert_status)](https://sonarcloud.io/dashboard?id=jrouwe_JoltPhysics)
